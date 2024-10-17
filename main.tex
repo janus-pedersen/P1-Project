@@ -1,0 +1,23 @@
+\input{setup/preamble.tex}% package inclusion and set up of the document
+\input{setup/hyphenations.tex}% 
+\input{setup/macros.tex}% my new macros
+
+\begin{document}
+% --- Front Page ---
+\pagestyle{empty} %disable headers and footers
+\pagenumbering{arabic}
+\input{sections/frontpageImage.tex}
+% \input{sections/colophon.tex}
+\input{sections/titlepages.tex}
+\cleardoublepage
+\pdfbookmark[0]{Contents}{label:contents}
+\pagestyle{fancy} %enable headers and footers again
+\tableofcontents
+% \listoftodos
+% \input{sections/preface.tex}
+\cleardoublepage
+
+
+\section{Introduction}
+
+\end{document}
